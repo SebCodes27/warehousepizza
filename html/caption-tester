@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Warehouse Pizza</title>
+        <meta name="description" content="">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../project.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+        <header>
+            
+            <h1>Hi there!</h1>
+
+            <img id="logo"/>
+
+            <nav id="nav-1"></nav>
+
+            <nav id="nav-2"></nav>
+
+        </header>
+
+        <main>
+
+            <div id="vidCaption">
+
+                <h2>Testing area</h2>
+
+                <video id="video" controls="controls" width="400px">
+
+                    <source src="../video/hellothere.mp4" type="video/mp4">
+                    <source src="../video/hellothere.webm" type="video/webm">
+                    <track label="English" kind="subtitles" srclang="en" src="../video/captions.vtt" default>
+                
+                </video>
+
+                <div id="video-controls" class="controls" data-state="hidden">
+
+                    <button id="capButton" type="button" data-state="captions">Captions</button>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer>
+
+        </footer>
+
+    </body>
+</html>
