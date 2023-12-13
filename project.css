@@ -16,8 +16,11 @@ main {
 }
 
 header {
+    position: fixed;
+    z-index: 2;
     flex-direction: row;
     width: 100%;
+    height: 80px;
     background-color: black;
 }
 
@@ -44,11 +47,16 @@ nav > ul > li > a {
 }
 
 #logo {
-    width: 6%;
+    width: 80px;
 }
 
 #nav-1 {
     width: 85%;
+}
+
+#nav-2 > ul > li > a {
+    color: black;
+    padding-right: 10px;
 }
 
 .hidden {
@@ -183,16 +191,14 @@ nav > ul > li > a {
     display: block;
     margin: 50px auto;
     width: 60%;
-    height: 300px;
+    height: auto;
     border: solid 2px;
 }
 
 .ats-2 {
-    position: relative;
+    display: flex;
+    text-align: center;
     margin: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     padding: 0 10%;
 
 }
@@ -202,9 +208,7 @@ nav > ul > li > a {
     overflow: hidden;
 }
 
-.ats-1 > img {
-    position: absolute;
-    height:inherit;
+#hst-img, #val-img {
     width: 100vw;
     left: 0;
     overflow: hidden;
@@ -213,13 +217,14 @@ nav > ul > li > a {
 .menu-1 {
     display: block;
     margin: auto;
-    background-color: white;
+    background-color: rgb(255, 244, 199);
 }
 
 .menu-2 {
     display: flex;
     line-height: 2em;
     padding: 0 10%;
+
 }
 
 .menu-3 {
@@ -295,4 +300,131 @@ button:hover {
     height: 5px;
     width: 80%;
     background-color: rgb(138, 137, 137);
+}
+
+.fa-bars {
+    color: white;
+}
+
+#icon {
+    display: none;
+}
+
+#home {
+    padding-top: 80px;
+}
+
+@media screen and (min-width: 600px) {
+    #nav-hidden {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .ctc-3b {
+        padding: 0 0px;
+    }
+
+    .tile > a > p {
+        top: 50%;
+    }
+
+    .test-2 {
+        flex-direction: column;
+    }
+
+    .test-3 {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    
+    .menu-2 {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .menu-3 {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .menu-4a, .menu-4b {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    .full-row {
+        flex-direction: column;
+    }
+
+    .tile {
+        width: 100%;
+    }
+
+    .ctc-3d {
+        display: table-row;
+    }
+
+    .ctc-2, .ctc-3, .ctc-3b {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #hours, #days {
+        text-align: center;
+    }
+
+    #main-info > p {
+        line-height: 2em;
+        padding: 20px 40px;
+    }
+
+    #onlineButton, #directionsButton {
+        top: 40px;
+    }
+
+    #onlineButton {
+        left: 120px;
+    }
+
+    #directionsButton {
+        left: 360px;
+        width: 180px;
+    }
+
+    #nav-1 {
+        display: none;
+    }
+
+    #icon {
+        display: block;
+        position: absolute;
+        color: white;
+        right: 5px;
+        top: 5px;
+    }
+
+    .ats-1 {
+        width: 90%;
+    }
+
+    nav > ul {
+        flex-direction: column;
+        text-align: end;
+        background-color: white;
+    }
+
+    nav > ul > li {
+        color: black;
+        padding: 6px;
+    }
+
 }
