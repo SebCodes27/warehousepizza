@@ -9,7 +9,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="project.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script type="application/ld+json">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">        <script type="application/ld+json">
         {
             "@context": "https://schema.org/",
             "@type": "",
@@ -32,91 +35,177 @@
 
         <header>
 
-            <img id="logo"/>
+            <div class="full-row">
 
-            <nav id="nav-1">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="./html/about-us.html">About Us</a></li>
-                    <li><a href="./html/menu.html">Menu</a></li>
-                    <li><a href="./html/caption-tester.html">Video</a></li>
-                    <li><a href="./html/order-online.html">Order Online</a></li>
-                </ul>
-            </nav>
+                <img id="logo" src="./images/pizzaLogo.jpg"/>
+
+                <nav id="nav-1">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="./html/about-us.html">About Us</a></li>
+                        <li><a href="./html/menu.html">Menu</a></li>
+                        <li><a href="./html/caption-tester.html">Video</a></li>
+                        <li><a href="./html/order-online.html">Order Online</a></li>
+                    </ul>
+                </nav>
+
+            </div>
                 
-            <nav id="nav-2">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="./html/about-us.html">About Us</a></li>
-                    <li><a href="./html/menu.html">Menu</a></li>
-                    <li><a href="./html/caption-tester.html">Video</a></li>
-                    <li><a href="./html/order-online.html">Order Online</a></li>
-                </ul>
-            </nav>
+            <div class="full-row hidden">
+            
+                <nav id="nav-2">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="./html/about-us.html">About Us</a></li>
+                        <li><a href="./html/menu.html">Menu</a></li>
+                        <li><a href="./html/caption-tester.html">Video</a></li>
+                        <li><a href="./html/order-online.html">Order Online</a></li>
+                    </ul>
+                </nav>
+
+            </div>
 
         </header>
     
         <main>
 
-            <div id="home">
+            <div id="home" class="frame">
 
                 <div id="menu-sm">
-                    <div id="pizza-tl" class="tile">Pizza</div>
-                    <div id="drinks-tl" class="tile">Drinks</div>
-                    <div id="sides-tl" class="tile">Sides</div>
-                    <div id="specials-tl" class="tile">Specials</div>
-                    <a href="./html/order-online.html"><button id="onlineButton" type="button">Order Online</button></a>
-                    <button id="directionsButton" type="button">Get Directions</button>
+                    
+                    <div class="fix-point">
+
+                        <a href="./html/order-online.html"><button id="onlineButton" type="button">Order Online</button></a>
+                        <a href="https://www.google.com/maps/dir//2340+D+St,+La+Verne,+CA+91750/@34.1010889,-117.852073,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x80c32e4d1d7367ed:0xdcd73d04fa041357!2m2!1d-117.7698139!2d34.1011325?entry=ttu"><button id="directionsButton" type="button">Get Directions</button></a>
+
+                    </div>                
+
+                    <div class="full-row">
+                        <div id="pizza-tl" class="tile">
+                            <a href="./html/menu.html">
+                            <img src="./images/pizza.jpg"></img>
+                            <p>Pizza</p>
+                            </a>
+                        </div>
+                        <div id="drinks-tl" class="tile">
+                            <a href="./html/menu.html">
+                            <img src="./images/drinks.jpg"></img>
+                            <p>Drinks</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="full-row">
+                        <div id="sides-tl" class="tile">
+                            <a href="./html/menu.html">
+                            <img src="./images/sides.jpg"></img>
+                            <p>Sides</p>
+                            </a>
+                        </div>
+                        <div id="specials-tl" class="tile">
+                            <a href="./html/menu.html">
+                            <img src="./images/specials.jpg"></img>
+                            <p>Specials</p>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
 
-            <div id="main-info">
+            <div id="main-info" class="frame">
 
                 <h2>About Us</h2>
 
-                <p>This is what we're about.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
             </div>
 
-            <div id="testimonials">
+            <div id="testimonials" class="frame">
 
-                <h2>Testimonials</h2>
+                <h2>Five Star Reviews <i class="fa fa-star"></i></h2>
 
-                <div class="test-gp">
-                    <img class="logo">
-                    <p>This place is great!</p>
+                <div class="test-1">
+                    <div class="test-2">
+                        <div class="test-3">
+                            <img class="logo" src="./images/profile.jpg">
+                        </div>
+                        <p>Eu volutpat odio facilisis mauris sit amet massa vitae tortor. Ultrices tincidunt arcu non sodales neque sodales ut. Non consectetur a erat nam at. Nulla malesuada pellentesque elit eget gravida.</p>
+                    </div>
                 </div>
 
-                <div class="test-gp">
-                    <img class="logo">
-                    <p>This place is wow!</p>
+                <div class="border"></div>
+
+                <div class="test-1">
+                    <div class="test-2">
+                        <div class="test-3">
+                            <img class="logo" src="./images/profile.jpg">
+                        </div>
+                        <p>Pellentesque pulvinar pellentesque habitant morbi. Quis auctor elit sed vulputate mi sit amet mauris commodo. Auctor elit sed vulputate mi sit.</p>
+                    </div>
                 </div>
 
-                <div class="test-gp">
-                    <img class="logo">
-                    <p>This place is zoomin!</p>
+                <div class="border"></div>
+
+                <div class="test-1">
+                    <div class="test-2">
+                        <div class="test-3">
+                            <img class="logo" src="./images/profile.jpg">
+                        </div>
+                        <p>Est ullamcorper eget nulla facilisi etiam dignissim. Nunc consequat interdum varius sit amet mattis vulputate. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. At erat pellentesque adipiscing commodo.</p>
+                    </div>
                 </div>
 
             </div>
 
-            <div id="contact">
+            <div id="contact" class="frame">
 
-                <h2>Contact Info</h2>
+                <h2></h2>
+                
+                <div class="ctc-1">
 
-                <p id="address">Warehouse Pizza, 2340 D St, La Verne, CA 91750</p>
+                    <div class="ctc-2">
 
-                <p id="phone">(909) 593-2714</p>
+                        <div class="ctc-3">
+                            <p id="address"><span class="lg-text">Address</span><br/>Warehouse Pizza, 2340 D St<br />La Verne, CA 91750</p>
+                        </div>
 
-                <p id="hours">
-                    Monday Closed<br/>
-                    Tuesday	11:30 AM-8 PM<br/>
-                    Wednesday 11:30 AM-8 PM<br/>
-                    Thursday 11:30 AM-8 PM<br/>
-                    Friday 11:30 AM-8 PM<br/>
-                    Saturday 11:30 AM-8 PM<br/>
-                    Sunday 11:30 AM-8 PM
-                </p>
+                        <div class="ctc-3">
+                            <p id="phone"><span class="lg-text">Phone Number</span><br/>(909) 593-2714</p>
+                        </div>
+
+                        <div class="ctc-3b"></div>
+
+                        <div class="ctc-3a">
+                            <p id="timeline"><span class="lg-text">Hours:</span><br/></p>
+                        </div>
+
+                        <div class="ctc-3a">
+                            <p id="days">Monday <br/>
+                                Tuesday<br/>
+                                Wednesday<br/>
+                                Thursday<br/>
+                                Friday<br/>
+                                Saturday<br/>
+                                Sunday</p>
+                        </div>
+
+                        <div class="ctc-3a">
+                            <p id="hours">
+                                Closed<br/>
+                                11:30 AM-8 PM<br/>
+                                11:30 AM-8 PM<br/>
+                                11:30 AM-8 PM<br/>
+                                11:30 AM-8 PM<br/>
+                                11:30 AM-8 PM<br/>
+                                11:30 AM-8 PM
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
             
             </div>
 
