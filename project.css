@@ -310,7 +310,7 @@ button:hover {
     display: none;
 }
 
-#home {
+#home, #about-us, #menu, #video {
     padding-top: 80px;
 }
 
@@ -408,8 +408,8 @@ button:hover {
         display: block;
         position: absolute;
         color: white;
-        right: 5px;
-        top: 5px;
+        right: 15px;
+        top: 31px;
     }
 
     .ats-1 {
