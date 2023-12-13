@@ -368,6 +368,10 @@ button:hover {
         width: 100%;
     }
 
+    .tile > a > p {
+        top: 80%;
+    }
+
     .ctc-3d {
         display: table-row;
     }
@@ -396,7 +400,7 @@ button:hover {
     }
 
     #directionsButton {
-        left: 360px;
+        margin-left: 20%;
         width: 180px;
     }
 
